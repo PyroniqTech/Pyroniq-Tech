@@ -1,16 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Tools – Pyroniq Tech</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background-color: #121212;
+      color: #eee;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0; padding: 20px;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      background-color: #1f1f1f;
+      padding: 10px 20px;
+      margin: 0 0 30px 0;
+      border-radius: 8px;
+    }
+    nav ul li {
+      margin-right: 20px;
+    }
+    nav ul li a {
+      color: #bbb;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 6px 10px;
+      border-radius: 4px;
+    }
+    nav ul li a.active,
+    nav ul li a:hover {
+      background-color: #3a7bfd;
+      color: white;
+    }
+    h1 {
+      margin-bottom: 20px;
+      font-weight: 700;
+      font-size: 2.4rem;
+      color: #3a7bfd;
+    }
+    .tool-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .tool-card {
+      background: #222;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 0 10px #2a2a2a;
+      transition: background-color 0.3s ease;
+    }
+    .tool-card:hover {
+      background-color: #333;
+    }
+    .tool-card h2 {
+      margin: 0 0 10px 0;
+      font-size: 1.6rem;
+      color: #74a9ff;
+    }
+    .tool-card p {
+      margin: 0 0 12px 0;
+      line-height: 1.4;
+      color: #ccc;
+    }
+    .tool-card a {
+      color: #3a7bfd;
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 1.5px solid transparent;
+      transition: border-bottom-color 0.2s ease;
+    }
+    .tool-card a:hover {
+      border-bottom-color: #3a7bfd;
+    }
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      color: #555;
+      font-size: 0.9rem;
+      padding-bottom: 20px;
+    }
+  </style>
 </head>
 <body>
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="tools.html" class="active">Tools</a></li>
+      <li><a href="tool.html" class="active">Tools</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="trust.html">Trust</a></li>
       <li><a href="career.html">Careers</a></li>
@@ -18,14 +97,22 @@
       <li><a href="payment.html">Payment</a></li>
     </ul>
   </nav>
+
   <section>
     <h1>Our Tools</h1>
-    <div class="tool-card">
-      <h2>Hexarid</h2>
-      <p>AI-powered automation tool for strategy games.</p>
-      <a href="hexarid.html" class="btn">View Details</a>
+    <div class="tool-list">
+      <div class="tool-card">
+        <h2><a href="hexarid.html">Hexarid</a></h2>
+        <p>Advanced Game of Empires automation tool with AI-powered modules for hospital, resource gathering, daily claims, and more.</p>
+      </div>
+      <!-- Future tools can be added like this -->
+      <div class="tool-card">
+        <h2><a href="futuretool.html">FutureTool</a></h2>
+        <p>Coming soon: Next-gen automation tool with innovative features to boost your gameplay.</p>
+      </div>
     </div>
   </section>
+
   <footer>
     &copy; 2025 Pyroniq Tech
   </footer>
