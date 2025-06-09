@@ -110,3 +110,25 @@ footer {
     font-size: 1.3rem;
   }
 }
+.about-section {
+  background-color: #1f1f1f;
+  padding: 40px 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(58, 123, 253, 0.4);
+  color: #ddd;
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+.about-section h2 {
+  color: #3a7bfd;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #bbb;
+}
