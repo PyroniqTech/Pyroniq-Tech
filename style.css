@@ -1,23 +1,46 @@
-/* Pyroniq Tech – Full Website Theme */
+/* Pyroniq Tech – Ultra-Professional Dark Theme */
+
+:root {
+  --bg: #0f0f0f;
+  --panel: #1a1a1a;
+  --primary: #3a7bfd;
+  --text: #dcdcdc;
+  --muted: #888;
+  --card: #191919;
+  --radius: 12px;
+  --shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  --transition: all 0.3s ease;
+}
 
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  background-color: #111;
-  color: #e0e0e0;
+  background: var(--bg);
+  color: var(--text);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
+  font-size: 16px;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+a:hover {
+  color: #5b9bff;
 }
 
 nav {
-  background: #1a1a1a;
-  padding: 20px 40px;
-  border-bottom: 1px solid #2d2d2d;
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.4);
+  background: var(--panel);
+  padding: 18px 40px;
+  border-bottom: 1px solid #222;
+  box-shadow: var(--shadow);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -26,87 +49,87 @@ nav {
 nav ul {
   display: flex;
   justify-content: center;
-  gap: 30px;
   list-style: none;
+  gap: 32px;
 }
 
 nav ul li a {
-  color: #aaa;
-  text-decoration: none;
   font-weight: 600;
-  font-size: 16px;
-  padding: 8px 12px;
-  border-radius: 6px;
-  transition: background 0.3s, color 0.3s;
+  color: var(--muted);
+  padding: 10px 14px;
+  border-radius: 8px;
+  transition: var(--transition);
 }
 
-nav ul li a:hover,
-nav ul li a.active {
-  background: #3a7bfd;
+nav ul li a.active,
+nav ul li a:hover {
+  background: var(--primary);
   color: #fff;
-}
-
-h1, h2, h3 {
-  color: #3a7bfd;
-  font-weight: 700;
 }
 
 section {
   max-width: 1200px;
   margin: auto;
-  padding: 40px 20px;
+  padding: 60px 20px;
+}
+
+h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: var(--primary);
+  margin-bottom: 30px;
 }
 
 .tool-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
-  margin-top: 30px;
 }
 
 .tool-card {
-  background: #1d1d1d;
-  padding: 25px;
-  border-radius: 16px;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
-  transition: 0.3s ease;
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 30px;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  border: 1px solid #222;
 }
 
 .tool-card:hover {
-  background-color: #272727;
-  transform: translateY(-4px);
+  background: #232323;
+  transform: translateY(-6px);
+  border-color: var(--primary);
 }
 
 .tool-card h2 {
-  font-size: 22px;
-  color: #74a9ff;
-  margin-bottom: 10px;
+  font-size: 1.6rem;
+  color: #6daaff;
+  margin-bottom: 12px;
 }
 
 .tool-card p {
   font-size: 15px;
-  color: #ccc;
+  color: #bbb;
+  margin-bottom: 14px;
 }
 
 .tool-card a {
-  display: inline-block;
-  margin-top: 10px;
-  color: #3a7bfd;
   font-weight: 600;
-  text-decoration: none;
+  font-size: 14px;
+  color: var(--primary);
   border-bottom: 1.5px solid transparent;
-  transition: border-color 0.2s;
 }
 
 .tool-card a:hover {
-  border-color: #3a7bfd;
+  border-bottom-color: var(--primary);
 }
 
 footer {
-  background: #1a1a1a;
+  background: var(--panel);
   text-align: center;
-  padding: 30px 10px;
-  font-size: 0.9rem;
-  color: #666;
-  border-top: 1px solid #2a2a2a;
+  padding: 40px 20px;
+  font-size: 0.85rem;
+  color: var(--muted);
+  border-top: 1px solid #222;
+  margin-top: 60px;
 }
