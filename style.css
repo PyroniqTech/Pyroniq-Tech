@@ -132,3 +132,86 @@ footer {
   line-height: 1.6;
   color: #bbb;
 }
+/* Nav menu */
+.nav-menu {
+  display: flex;
+  list-style: none;
+  background-color: #1f1f1f;
+  padding: 12px 24px;
+  margin: 0;
+  border-radius: 8px;
+  justify-content: center;
+  gap: 20px;
+}
+.nav-menu li a {
+  color: #bbb;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+.nav-menu li a.active,
+.nav-menu li a:hover {
+  background-color: #3a7bfd;
+  color: #fff;
+}
+
+/* Hero section */
+.hero-section {
+  text-align: center;
+  margin: 80px auto;
+  max-width: 800px;
+  padding: 0 20px;
+}
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #3a7bfd;
+  margin-bottom: 20px;
+}
+.hero-section p {
+  font-size: 1.3rem;
+  color: #ccc;
+  margin-bottom: 40px;
+  line-height: 1.5;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  background-color: #3a7bfd;
+  color: white;
+  font-weight: 700;
+  padding: 14px 36px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+.btn:hover {
+  background-color: #2a5edb;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 100px;
+  color: #555;
+  font-size: 0.9rem;
+  padding-bottom: 20px;
+}
+
+/* Responsive for mobile */
+@media (max-width: 600px) {
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+  .hero-section p {
+    font-size: 1rem;
+  }
+  .nav-menu {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
